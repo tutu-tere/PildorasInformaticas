@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bucle while</title>
+</head>
+<body>
+  <script>
+    //El bucle lo que hace es repetir codigo, no dar saltos como en los condicionales, sino que retornando hacia atrás
+    /* Existen dos tipos de bucles
+     Determinados: For: Saben cuanto codigo van a repetir antes de ejecutar el programa
+     Indeterminados: while (por mientras) - do while. Repite un numero indeterminado de lineas hasta ejecutar el programa.
+     la sintaxis es while (condicion){ codigo a repetir mientras la condicion se cumpla, se supone que en algun momento deja de dar true, sino entramos en un bucle infinito}
+    */
+    const meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", 
+    "Julio", "Agosto", "Septiembre","Octubre","Noviembre","Diciembre"];
+
+    let contador = 0;
+
+    while(contador < meses.length) {
+      document.write(meses[contador] + "<br/> ");
+      contador++;
+    }
+  </script>
+  
+</body>
+</html>

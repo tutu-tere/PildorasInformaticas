@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Condicional If Y else if, control de flujo</title>
+</head>
+<body id="cuerpo">
+  <h1>Hola Mundo</h1>
+  <script>
+  const cuerpo = document.getElementById("cuerpo");
+const colorWeb = prompt("Introduce el color de fondo. Azul/Verde/Rojo").toLowerCase();
+
+if (colorWeb == "azul") {
+    cuerpo.style.backgroundColor = "blue";
+} else if (colorWeb == "rojo") {
+    cuerpo.style.backgroundColor = "red";
+} else if (colorWeb == "verde") {
+    cuerpo.style.backgroundColor = "green";
+} 
+else {
+  alert ("Ese color no esta contemplado");
+}
+
+  </script>
+  
+</body>
+</html>

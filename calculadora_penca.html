@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de dos numeros con condicionales</title>
+<script>
+  const num1 = prompt ("Introduce el primer n°");
+  const num2 = prompt ("Introduce el segundo n°");
+  if (!isNaN(num1) && !isNaN(num2)) {
+  const operacion = prompt ("¿Qué operación deseas realizar? suma/resta/multiplicación/división");
+    if (operacion=="suma") {
+    alert (Number(num1)+ Number(num2));
+    } 
+    else if (operacion=="resta") {
+    alert (Number(num1) - Number(num2));
+    } 
+    else if (operacion=="multiplicacion" || operacion=="multiplicación") {
+     alert (Number(num1) * Number(num2));
+    }
+    else if (operacion=="division" || operacion=="división") {
+      alert (Number(num1) / Number(num2));
+    }
+    else {
+      alert("Operación no contemplada");
+    }
+    }
+    else { 
+      alert("no se pueden operar los numeros ")
+  }
+</script>
+</head>
+<body>
+  
+</body>
+</html>
