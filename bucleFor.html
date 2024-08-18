@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uso For</title>
+  <script>
+
+//diez mensajes que diga hola, la sintaxis es la siguiente: for(init;condition;incremento o decremento)
+// for (let i=0; i<10; i++) {
+//    document.write("Hola" + "<br/>");
+// }
+
+// const meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", 
+//     "Julio", "Agosto", "Septiembre","Octubre","Noviembre","Diciembre"];
+
+//     for (let i = 0; i < 12; i++) { //meses.length, si no conocemos la extension del array
+//       document.write(meses[i] + "<br/> "); 
+//     }
+//Por lo general se usa mucho con arrays
+//otras utilidades del bucle for
+
+let trabajadores = new Array();
+let persona ="";
+let contador = 0;
+while (persona!= "salir") {
+persona= prompt("Introduce nombre del trabajador");
+
+trabajadores[contador] = persona;
+
+contador++;
+}
+
+trabajadores.pop(); //esto se usa porque al escribir salir se imprime como parte del array
+
+for(let i= 0; i <trabajadores.length; i ++) {
+  document.write (trabajadores[i] + "<br/>");
+
+}
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

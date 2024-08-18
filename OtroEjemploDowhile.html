@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🧙‍♂️Adivina el numero</title>
+</head>
+<body>
+
+  <script>
+    //Lo unico que funciona en este caso es do while porque al menos va a preguntar una vez y nos da la posibilidad de ejecutar el codigo.
+    let aleatorio = Math.round(Math.random()*100);
+   
+    let minum, intentos;
+  
+    minum = 0;
+  
+    intentos = 0;
+  
+    do {
+        minum = prompt("Introduce un n° entre 0 y 100");
+        if (aleatorio > minum) {
+          alert("Dar un n° más alto ☝️");
+          
+        }
+        if (aleatorio < minum) {
+          alert("Debes dar un n° más bajo 👇"+ "<br/>");
+          
+        }
+        intentos++
+       
+     
+    } while (aleatorio != minum);
+      alert("Felicidades has encontrado el numero 🥳🥳. Has realizado " + intentos + " intentos en total");
+      
+  </script>
+</body>
+</html>
